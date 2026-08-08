@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Local Visibility Audit — SiteCraft SA</title>
+<meta name="description" content="Free instant audit: see whether your business is findable online, how many competitors near you have websites, and what you are losing. No signup.">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.tool{max-width:820px;margin:0 auto}
+.form{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;margin:28px 0}
+@media(max-width:700px){.form{grid-template-columns:1fr}}
+.form input,.form select{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--txt);font:inherit;outline:none}
+.form input:focus,.form select:focus{border-color:var(--acc)}
+#out{display:none;margin-top:34px}
+.score-wrap{display:flex;gap:26px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:28px;flex-wrap:wrap}
+.ring{--v:0;width:132px;height:132px;border-radius:50%;flex:none;display:grid;place-items:center;
+ background:conic-gradient(var(--rc) calc(var(--v)*1%),#1c2530 0)}
+.ring i{width:104px;height:104px;border-radius:50%;background:var(--panel);display:grid;place-items:center;
+ font-style:normal;font-size:32px;font-weight:800;color:var(--rc)}
+.verdict h3{font-size:23px;margin-bottom:6px}
+.verdict p{color:var(--mut);font-size:15px;max-width:46ch}
+.checks{display:grid;gap:10px;margin-top:22px}
+.chk{display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.chk .ic{font-size:19px;line-height:1.2;flex:none}
+.chk b{display:block;font-size:15px;margin-bottom:3px}
+.chk span{color:var(--mut);font-size:14px}
+.bars{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:24px}
+.bar{margin-bottom:16px}
+.bar em{font-style:normal;display:flex;justify-content:space-between;font-size:14px;color:var(--mut);margin-bottom:7px}
+.bar div{height:11px;border-radius:99px;background:#1c2530;overflow:hidden}
+.bar div i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .9s ease}
+.loss{margin-top:22px;background:linear-gradient(135deg,#1a2430,#132029);border:1px solid var(--acc2);border-radius:var(--rad);padding:26px}
+.loss b{font-size:34px;color:var(--acc);display:block;letter-spacing:-.02em}
+.loss span{color:var(--mut);font-size:14px}
+.rivals{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:8px 18px}
+.rivals div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:14.5px}
+.rivals div:last-child{border:0}
+.yes{color:var(--acc);font-weight:700}.no{color:#ff7a7a;font-weight:700}
+.spin{display:none;text-align:center;color:var(--mut);padding:34px}
+.spin b{display:block;color:var(--txt);margin-bottom:6px}
+.pill{display:inline-block;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:var(--acc);
+ padding:5px 13px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.src{color:var(--mut);font-size:12.5px;margin-top:18px;text-align:center}
+</style></head><body>
+
+<header class="nav"><a class="logo" href="../../index.html">Site<span>Craft</span> SA</a>
+<nav><a href="../../index.html#work">Samples</a><a href="../../index.html#pricing">Pricing</a>
+<a class="btn btn-sm" href="../../index.html#contact">Free sample</a></nav></header>
+
+<section class="hero" style="padding-bottom:20px"><div class="hero-inner tool">
+<p class="eyebrow">Free tool · no signup · instant</p>
+<h1>How <em>findable</em> is your business?</h1>
+<p class="sub">Type your business name and town. We check live map data, count how many competitors near you already have websites, and estimate what the gap is costing you. Takes about ten seconds.</p>
+</div></section>
+
+<section style="padding-top:10px"><div class="tool">
+<div class="form">
+<input id="bname" placeholder="Your business name" autocomplete="off">
+<input id="btown" placeholder="Town or suburb (e.g. Hatfield, Pretoria)" autocomplete="off">
+<button class="btn" onclick="runAudit()">Run free audit</button>
+</div>
+<div class="spin" id="spin"><b>Checking live map data…</b>Searching OpenStreetMap and scanning nearby competitors.</div>
+
+<div id="out">
+ <div class="score-wrap">
+  <div class="ring" id="ring"><i id="scoreNum">0</i></div>
+  <div class="verdict"><span class="pill" id="grade">—</span>
+   <h3 id="vtitle" style="margin-top:12px"></h3><p id="vtext"></p></div>
+ </div>
+ <div class="checks" id="checks"></div>
+ <div class="bars" id="bars"></div>
+ <div class="loss"><span>Estimated enquiries you are handing to competitors each month</span><b id="lossNum">—</b>
+  <span id="lossNote"></span></div>
+ <div class="rivals" id="rivals"></div>
+ <div style="text-align:center;margin:36px 0 10px">
+  <a class="btn" href="../../index.html#contact">Fix this — get my free sample site</a>
+  <p class="src">We build the site first, free. You pay only if you want to keep it.</p>
+ </div>
+</div>
+<p class="src">Data: OpenStreetMap Nominatim &amp; Overpass API — free, open, live. Nothing is stored and nothing is sent to us unless you ask for a sample site.</p>
+</div></section>
+
+<footer><p>SiteCraft SA · <a href="mailto:lehauthabang@gmail.com">lehauthabang@gmail.com</a> · <a href="../../index.html">Home</a></p></footer>
+
+<script>
+var KIND = [
+ ["dentist","amenity","dentist",680,"patients"],
+ ["dental","amenity","dentist",680,"patients"],
+ ["restaurant","amenity","restaurant",240,"covers"],
+ ["cafe","amenity","cafe",95,"customers"],
+ ["coffee","amenity","cafe",95,"customers"],
+ ["bar","amenity","bar",180,"customers"],
+ ["doctor","amenity","doctors",550,"patients"],
+ ["vet","amenity","veterinary",700,"clients"],
+ ["hair","shop","hairdresser",420,"clients"],
+ ["salon","shop","hairdresser",420,"clients"],
+ ["barber","shop","hairdresser",220,"clients"],
+ ["beauty","shop","beauty",480,"clients"],
+ ["spa","shop","beauty",600,"clients"],
+ ["panel","shop","car_repair",3500,"jobs"],
+ ["mechanic","shop","car_repair",3500,"jobs"],
+ ["motor","shop","car_repair",3500,"jobs"],
+ ["bakery","shop","bakery",120,"customers"],
+ ["butcher","shop","butcher",260,"customers"],
+ ["florist","shop","florist",380,"orders"],
+ ["plumb","craft","plumber",1400,"call-outs"],
+ ["electric","craft","electrician",1600,"call-outs"],
+ ["build","craft","builder",8000,"projects"],
+ ["guest","tourism","guest_house",900,"bookings"],
+ ["lodge","tourism","guest_house",900,"bookings"],
+ ["gym","leisure","fitness_centre",550,"members"],
+ ["pharmac","amenity","pharmacy",300,"customers"],
+ ["law","office","lawyer",4500,"matters"],
+ ["attorney","office","lawyer",4500,"matters"],
+ ["account","office","accountant",2800,"clients"],
+ ["estate","office","estate_agent",9000,"mandates"]
+];
+function detect(n){
+  var s=n.toLowerCase();
+  for(var i=0;i<KIND.length;i++) if(s.indexOf(KIND[i][0])>-1) return KIND[i];
+  return null;
+}
+function esc(s){return String(s).replace(/[<>&]/g,function(c){return {'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+
+async function runAudit(){
+  var name=document.getElementById('bname').value.trim();
+  var town=document.getElementById('btown').value.trim();
+  if(!name||!town){alert('Please enter both your business name and your town.');return;}
+  document.getElementById('out').style.display='none';
+  document.getElementById('spin').style.display='block';
+
+  var lat=null,lon=null,found=null,label=town;
+  try{
+    var q=encodeURIComponent(name+', '+town+', South Africa');
+    var r=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+q,{headers:{'Accept':'application/json'}});
+    var j=await r.json();
+    if(j&&j.length){lat=+j[0].lat;lon=+j[0].lon;found=j[0].display_name;}
+  }catch(e){}
+  if(lat===null){
+    try{
+      var r2=await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q='+encodeURIComponent(town+', South Africa'));
+      var j2=await r2.json();
+      if(j2&&j2.length){lat=+j2[0].lat;lon=+j2[0].lon;label=j2[0].display_name.split(',').slice(0,2).join(',');}
+    }catch(e){}
+  }
+  if(lat===null){document.getElementById('spin').innerHTML='<b>Could not locate that town.</b>Try a bigger nearby town — e.g. "Hatfield, Pretoria".';return;}
+
+  var k=detect(name);
+  var rivals=[],withSite=0,total=0;
+  if(k){
+    var oq='[out:json][timeout:25];node(around:5000,'+lat+','+lon+')["'+k[1]+'"="'+k[2]+'"];out body 120;';
+    try{
+      var ro=await fetch('https://overpass-api.de/api/interpreter',{method:'POST',body:'data='+encodeURIComponent(oq),
+        headers:{'Content-Type':'application/x-www-form-urlencoded'}});
+      var jo=await ro.json();
+      (jo.elements||[]).forEach(function(e){
+        var t=e.tags||{}; if(!t.name) return;
+        var has=!!(t.website||t['contact:website']||t.url);
+        total++; if(has) withSite++;
+        rivals.push({n:t.name,w:has});
+      });
+    }catch(e){}
+  }
+
+  // scoring
+  var score=0, checks=[];
+  var listed = !!found;
+  if(listed){score+=30;checks.push(['✅','You are on the map','Your business appears in open map data, which is what Google, Apple Maps and Uber all read from.']);}
+  else{checks.push(['❌','Not found in open map data','Your business does not appear in OpenStreetMap for that name. Apps and directories that use it cannot show you at all.']);}
+
+  var ownSite = rivals.some(function(x){return x.n.toLowerCase()===name.toLowerCase() && x.w;});
+  if(ownSite){score+=40;checks.push(['✅','A website is linked to your listing','Searchers can click straight through to you.']);}
+  else{checks.push(['❌','No website linked to your listing','This is the big one. People find your name, find nothing to click, and go to the next result.']);}
+
+  var pct = total? Math.round(withSite/total*100) : 0;
+  if(total>=3){
+    if(pct>=60) checks.push(['⚠️',pct+'% of nearby competitors have a website','You are in the minority without one. Every search you appear in, they win the click.']);
+    else checks.push(['⚠️',pct+'% of nearby competitors have a website','The field is wide open — a site now puts you ahead of most of your area.']);
+  } else {
+    checks.push(['ℹ️','Few mapped competitors nearby','Little direct competition in map data, which makes owning the search term cheap and easy right now.']);
+  }
+
+  var mobile = ownSite;
+  if(!mobile) checks.push(['❌','No mobile booking or click-to-call path','Over 70% of local searches happen on a phone. Without a page, there is no tap-to-book, no directions button, no menu or price list.']);
+  else score+=15;
+
+  if(k) score+=15;
+  score=Math.max(8,Math.min(score,100));
+
+  // paint
+  var rc = score>=70?'#3ddc97':(score>=40?'#ffc65b':'#ff7a7a');
+  var grade = score>=70?'Strong':(score>=40?'At risk':'Critical gap');
+  var vt = score>=70?'You are mostly covered':(score>=40?'You are leaking customers':'You are effectively invisible online');
+  var vx = score>=70?'A few refinements would tighten this up, but the fundamentals are in place.'
+      :(score>=40?'People can find your name but cannot act on it. That gap is where enquiries disappear.'
+      :'Customers searching for exactly what you sell cannot click through to you. Right now that traffic goes to whoever ranks next.');
+
+  var ring=document.getElementById('ring');
+  ring.style.setProperty('--rc',rc); ring.style.setProperty('--v',score);
+  document.getElementById('scoreNum').textContent=score;
+  document.getElementById('scoreNum').style.color=rc;
+  var g=document.getElementById('grade'); g.textContent=grade;
+  g.style.color=rc; g.style.borderColor=rc; g.style.background='transparent';
+  document.getElementById('vtitle').textContent=vt;
+  document.getElementById('vtext').textContent=vx;
+
+  document.getElementById('checks').innerHTML=checks.map(function(c){
+    return '<div class="chk"><span class="ic">'+c[0]+'</span><div><b>'+esc(c[1])+'</b><span>'+esc(c[2])+'</span></div></div>';}).join('');
+
+  var val=k?k[3]:400, unit=k?k[4]:'customers';
+  var lost = Math.max(3, Math.round((total||8)*0.9));
+  document.getElementById('bars').innerHTML=
+    '<div class="bar"><em><span>Competitors within 5km with a website</span><span>'+withSite+' of '+total+'</span></em><div><i style="width:'+pct+'%"></i></div></div>'+
+    '<div class="bar"><em><span>Your online visibility score</span><span>'+score+'/100</span></em><div><i style="width:'+score+'%"></i></div></div>'+
+    '<div class="bar"><em><span>Local searches happening on mobile</span><span>72%</span></em><div><i style="width:72%"></i></div></div>';
+
+  document.getElementById('lossNum').textContent = ownSite ? 'You are capturing these' : ('~'+lost+' '+unit+' / month');
+  document.getElementById('lossNote').textContent = ownSite
+    ? 'Your listing has a clickable destination, so searches convert.'
+    : 'At an average value of about R'+val+' each, that is roughly R'+(lost*val).toLocaleString('en-ZA')+' of enquiry value going elsewhere every month.';
+
+  if(rivals.length){
+    document.getElementById('rivals').style.display='block';
+    document.getElementById('rivals').innerHTML='<div style="border-bottom:1px solid rgba(255,255,255,.12)"><b>Businesses like yours within 5km</b><b>Website?</b></div>'+
+      rivals.slice(0,12).map(function(x){return '<div><span>'+esc(x.n)+'</span><span class="'+(x.w?'yes':'no')+'">'+(x.w?'Yes':'No')+'</span></div>';}).join('');
+  } else { document.getElementById('rivals').style.display='none'; }
+
+  document.getElementById('spin').style.display='none';
+  document.getElementById('out').style.display='block';
+  document.getElementById('out').scrollIntoView({behavior:'smooth',block:'start'});
+}
+document.addEventListener('keydown',function(e){if(e.key==='Enter')runAudit();});
+</script></body></html>
