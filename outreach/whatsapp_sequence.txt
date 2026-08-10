@@ -1,0 +1,62 @@
+SITECRAFT SA — WHATSAPP OUTREACH SEQUENCE (5 messages)
+=========================================================
+Rules:
+- Send Message 1 to 4-5 NEW prospects per day (never blast one sitting).
+- Wait for a reply before sending the next in the sequence to that person.
+- Replace [BUSINESS], [SUBURB], [URL] per prospect.
+- Keep it human. No emojis spam. One ask per message.
+
+------------------------------------------------------------
+MSG 1 — Day 0 (the hook: "I already built it")
+------------------------------------------------------------
+Hi [BUSINESS] 👋 I'm Thabang from SiteCraft SA. I noticed you don't have a
+website, so I built you a free sample — no catch, nothing owed:
+[URL]
+Most customers in [SUBURB] search Google before they call. Right now they
+find your competitors, not you. Want me to walk you through it? (2 min)
+
+------------------------------------------------------------
+MSG 2 — Day 2 (if no reply: soft nudge + proof)
+------------------------------------------------------------
+Hey [BUSINESS] — just following up on the free site I built for you:
+[URL]
+I do this for local businesses across Joburg, Pretoria and Cape Town. The
+site has your number, directions, hours and a WhatsApp button so customers
+can reach you straight from Google. Still keen to see it live?
+
+------------------------------------------------------------
+MSG 3 — Day 5 (if no reply: handle the "how much" objection pre-emptively)
+------------------------------------------------------------
+Hi [BUSINESS] — quick one. If the only thing stopping you is cost, it's
+smaller than one lost customer a month:
+• R1,500 once — your own .co.za site + domain, live in 48 hours
+• R450/month — hosting, updates, WhatsApp button, monthly check
+The sample [URL] is free to look at either way. Want me to switch it live?
+
+------------------------------------------------------------
+MSG 4 — Day 8 (if no reply: scarcity / limited slots)
+------------------------------------------------------------
+Hey [BUSINESS] 👋 I'm taking on 5 local businesses this month at the
+R1,500 setup rate and then it goes up. Your free sample is ready:
+[URL]
+If you'd like it on your own domain this week, just say "yes" and I'll
+register it and build it out. No pressure if the timing's off.
+
+------------------------------------------------------------
+MSG 5 — Day 12 (breakup: lowest pressure, highest reply rate)
+------------------------------------------------------------
+Hi [BUSINESS] — I'll stop bugging you after this one 😄 Your free sample
+stays live here whenever you want it: [URL]
+If a website ever moves up your list, just WhatsApp me and I'll pick it
+up in minutes. Either way, good luck with [BUSINESS]!
+
+=========================================================
+REPLY HANDLING (when they engage):
+- "How does it work?" → "I build your real site on your .co.za domain from
+  the sample, add your menu/prices/photos, connect WhatsApp + Google Maps,
+  and it's live in 48h. You get admin access. R1,500 now, R450/mo after."
+- "Send more info" → send the proposal PDF (pdf/<slug>.pdf) or the email text.
+- "How much?" → state R1,500 + R450/mo, then "Shall I register the domain?"
+- "Not now" → "No worries — sample stays live. I'll check back in a month."
+- "Yes / do it" → register .co.za (~R120/yr, xneelo/Afrihost), collect
+  R1,500 (EFT), build, publish, then monthly R450 debit/EFT.
