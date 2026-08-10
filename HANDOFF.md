@@ -29,13 +29,17 @@ Even 5 clients/month = R7,500 + R2,250/mo.
 3. Lead with *"I already built your site — free, no catch"* + the live URL.
 4. On yes: register `.co.za` (~R120/yr via xneelo/Afrihost), move sample to their domain, collect R1,500.
 
-## Re-run the engine (new city)
-```
-python prospects/find_prospects.py   # edit AREAS for any SA metro
-python sites/generate_site.py prospects/prospects_raw.json
-python outreach/build_outreach.py prospects/prospects_raw.json
-git add -A && git commit -m batch && git push
-```
+## Batch 2 — Cape Town (2026-08-10, verified live)
+- **12 new prospects** pulled from OSM: Cape Town CBD, Tamboerskloof, Observatory, Woodstock.
+- Segments: 7 restaurants, 3 beauty, 2 hairdressers.
+- **12 sample sites** published: `samples/<slug>.html` (e.g. flourish-bistro, the-beauty-spot, aris-souvlaki).
+- **12 outreach packs** added to `outreach/emails` + `outreach/proposals`.
+- Prospect data: `tools/prospects_cpt_20260810.json`.
+- Re-run for any city: copy `find_prospects.py` → edit `AREAS` bbox → run → generate → push.
+
+## Running totals (both batches)
+- **33 qualified prospects**, **33 live sample sites**, **33 outreach packs** across JHB + Pretoria + Cape Town.
+- At the R1,500 + R450/mo model, even a 20% close rate (≈7 clients) = **R10,500 setup + R3,150/mo**.
 
 ## Pitfalls (learned)
 - Overpass 429s — script already throttles (sleep 4s) + rotates mirrors.
