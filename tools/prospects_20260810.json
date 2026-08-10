@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Prof. H B Dullabh",
+    "category": "dentist",
+    "area": "JHB_Fordsburg",
+    "phone": "+27 11 838 5891",
+    "email": "drhddullabh@gmail.com",
+    "lat": -26.2024551,
+    "lon": 28.0230527,
+    "addr": "Lilian Ngoyi Street 36",
+    "suburb": "JHB_Fordsburg"
+  },
+  {
+    "name": "Pata Pata",
+    "category": "restaurant",
+    "area": "JHB_CBD",
+    "phone": "+27 11 069 8172",
+    "email": null,
+    "lat": -26.2041676,
+    "lon": 28.0597979,
+    "addr": "Fox Street 286",
+    "suburb": "JHB_CBD"
+  },
+  {
+    "name": "High Point Dental Clinic",
+    "category": "dentist",
+    "area": "JHB_CBD",
+    "phone": "+27 117919013",
+    "email": null,
+    "lat": -26.1892628,
+    "lon": 28.0488709,
+    "addr": "Claim Street",
+    "suburb": "JHB_CBD"
+  },
+  {
+    "name": "Hair on Tyrone",
+    "category": "hairdresser",
+    "area": "JHB_CBD",
+    "phone": "+27 11 486 2115",
+    "email": null,
+    "lat": -26.1594647,
+    "lon": 28.0257695,
+    "addr": "",
+    "suburb": "JHB_CBD"
+  },
+  {
+    "name": "Groenkloof Dentist",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 346 3588",
+    "email": null,
+    "lat": -25.77228,
+    "lon": 28.2149499,
+    "addr": "George Storrar Drive",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Casa da Brooklyn",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 346 4600",
+    "email": null,
+    "lat": -25.772724,
+    "lon": 28.2314066,
+    "addr": "Dey Street 299",
+    "suburb": "PretoriaCentre"
+  },
+  {
+    "name": "Kung-Fu Kitchen",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 346 2293",
+    "email": null,
+    "lat": -25.77174,
+    "lon": 28.23142,
+    "addr": "Middel Street 273",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Dr Annette Preis",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 362 7180",
+    "email": "dental@hatmed.co.za",
+    "lat": -25.751229,
+    "lon": 28.2356279,
+    "addr": "",
+    "suburb": "PretoriaCentre"
+  },
+  {
+    "name": "Trademarx Restaurant and Bar",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 803 6122",
+    "email": null,
+    "lat": -25.7550348,
+    "lon": 28.2218317,
+    "addr": "Kirkness Street 461",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Tandarts",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 333 0227",
+    "email": null,
+    "lat": -25.71835,
+    "lon": 28.2309099,
+    "addr": "Nico Smith Street 962",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Oral and Dental Hospital.",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 319 2370",
+    "email": null,
+    "lat": -25.7107632,
+    "lon": 28.2010501,
+    "addr": "Steve Biko Road",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Lara Van Der Merwe",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 460 4958",
+    "email": null,
+    "lat": -25.7781,
+    "lon": 28.2389498,
+    "addr": "Milner Street 294",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Pure Cafe",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 4203883",
+    "email": null,
+    "lat": -25.7543171,
+    "lon": 28.2292683,
+    "addr": "",
+    "suburb": "PretoriaCentre"
+  },
+  {
+    "name": "Clicks",
+    "category": "chemist",
+    "area": "PretoriaCentre",
+    "phone": "+27 123210812",
+    "email": null,
+    "lat": -25.7563624,
+    "lon": 28.1857164,
+    "addr": "Bosman Street",
+    "suburb": "PretoriaCentre"
+  },
+  {
+    "name": "Rhapsody's Sunnyside",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 341 3793",
+    "email": "sunnypark@rhapsodys.co.za",
+    "lat": -25.7511142,
+    "lon": 28.203477,
+    "addr": "",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "A Taste Of Africa",
+    "category": "restaurant",
+    "area": "PretoriaCentre",
+    "phone": "+27127702057",
+    "email": null,
+    "lat": -25.7479311,
+    "lon": 28.2336636,
+    "addr": "Arcadia Street 1077",
+    "suburb": "Hatfield"
+  },
+  {
+    "name": "Dis-Chem",
+    "category": "chemist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 612 0285",
+    "email": null,
+    "lat": -25.7511445,
+    "lon": 28.2228563,
+    "addr": "Kirkness Street Shop B03",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Joubert F J",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 322 1380",
+    "email": null,
+    "lat": -25.7486854,
+    "lon": 28.1965935,
+    "addr": "",
+    "suburb": "PretoriaCentre"
+  },
+  {
+    "name": "Tandarts",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27123330227",
+    "email": null,
+    "lat": -25.7183428,
+    "lon": 28.2309204,
+    "addr": "Nico Smith Street",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Immelman J L",
+    "category": "dentist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12 460 8635",
+    "email": null,
+    "lat": -25.7695815,
+    "lon": 28.2355823,
+    "addr": "Jan Shoba Street 1148 Brooklyn Medpark",
+    "suburb": "Pretoria"
+  },
+  {
+    "name": "Clicks",
+    "category": "chemist",
+    "area": "PretoriaCentre",
+    "phone": "+27 12321 1227",
+    "email": null,
+    "lat": -25.7478056,
+    "lon": 28.1921348,
+    "addr": "Pretorius Street",
+    "suburb": "Pretoria"
+  }
+]
