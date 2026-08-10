@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BeeSmart Academic Studio — University Work, Done Right</title>
+<style>
+  :root{
+    --honey:#FFC83D;
+    --honey-deep:#F6A623;
+    --comb:#FFE39B;
+    --ink:#2B2118;
+    --cream:#FFF8E7;
+    --leaf:#7BC47F;
+    --pink:#FF9EB5;
+    --blue:#73C2FB;
+    --shadow:0 10px 30px rgba(120,80,0,.15);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Baloo 2","Segoe UI",system-ui,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  /* ---------- HEADER / HERO ---------- */
+  header{
+    position:relative;
+    background:linear-gradient(160deg,#FFE39B 0%,#FFC83D 60%,#F6A623 100%);
+    padding:90px 20px 120px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero-hive{position:absolute;inset:0;opacity:.25;background-image:
+    radial-gradient(circle at 10% 20%, #fff 14px, transparent 15px),
+    radial-gradient(circle at 50% 60%, #fff 18px, transparent 19px),
+    radial-gradient(circle at 80% 30%, #fff 12px, transparent 13px);
+    background-size:140px 140px;pointer-events:none;}
+  h1{
+    font-size:clamp(2.2rem,6vw,4.5rem);
+    color:#fff;
+    text-shadow:0 4px 0 var(--honey-deep),0 6px 14px rgba(0,0,0,.15);
+    letter-spacing:1px;
+    position:relative;z-index:2;
+  }
+  .tag{
+    display:inline-block;margin-top:18px;
+    background:#fff;color:var(--ink);
+    padding:10px 22px;border-radius:40px;font-weight:700;font-size:1.1rem;
+    box-shadow:var(--shadow);position:relative;z-index:2;
+    animation:bob 3s ease-in-out infinite;
+  }
+  .sub{
+    max-width:720px;margin:26px auto 0;color:#5a4416;font-size:1.15rem;font-weight:600;
+    position:relative;z-index:2;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  /* flying bee */
+  .flybee{position:absolute;top:30px;left:-120px;width:90px;z-index:3;animation:fly 9s linear infinite}
+  @keyframes fly{
+    0%{transform:translate(0,0) rotate(8deg)}
+    25%{transform:translate(38vw,120px) rotate(-6deg)}
+    50%{transform:translate(70vw,30px) rotate(10deg)}
+    75%{transform:translate(40vw,180px) rotate(-4deg)}
+    100%{transform:translate(0,0) rotate(8deg)}
+  }
+  .wing{transform-origin:center;animation:flutter .18s linear infinite}
+  @keyframes flutter{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.55)}}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:70px 20px;max-width:1080px;margin:0 auto}
+  .sec-title{font-size:clamp(1.6rem,4vw,2.6rem);text-align:center;margin-bottom:14px;color:var(--honey-deep)}
+  .sec-sub{text-align:center;max-width:680px;margin:0 auto 40px;color:#6b5436;font-weight:600}
+
+  /* problem vs solution */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{
+    background:#fff;border-radius:26px;padding:28px;box-shadow:var(--shadow);
+    border:3px solid #ffe9b8;transition:transform .25s;
+  }
+  .card:hover{transform:translateY(-6px) rotate(-1deg)}
+  .card.bad{border-color:#ffd0d8}
+  .card.good{border-color:#cdeccf}
+  .card h3{font-size:1.35rem;margin-bottom:10px}
+  .card ul{list-style:none}
+  .card li{padding:6px 0 6px 30px;position:relative;font-weight:600}
+  .card.bad li:before{content:"✗";position:absolute;left:0;color:#ff6b6b;font-weight:900}
+  .card.good li:before{content:"✓";position:absolute;left:0;color:var(--leaf);font-weight:900}
+
+  /* services grid */
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+  .svc{
+    background:#fff;border-radius:24px;padding:26px 22px;text-align:center;
+    box-shadow:var(--shadow);border:3px dashed var(--comb);transition:transform .25s,background .25s;
+  }
+  .svc:hover{transform:translateY(-8px);background:#fffdf3}
+  .svc svg{width:84px;height:84px;margin-bottom:12px}
+  .svc h3{font-size:1.2rem;margin-bottom:8px}
+  .svc p{font-size:.95rem;color:#6b5436;font-weight:600}
+
+  /* process steps */
+  .steps{display:flex;flex-wrap:wrap;justify-content:center;gap:18px;margin-top:20px}
+  .step{
+    background:linear-gradient(160deg,#fff,#fff7e2);border-radius:20px;
+    padding:22px 18px;width:200px;text-align:center;box-shadow:var(--shadow);
+    border:3px solid var(--comb);position:relative;
+  }
+  .step .num{
+    width:46px;height:46px;border-radius:50%;background:var(--honey);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;
+    margin:0 auto 12px;box-shadow:0 4px 0 var(--honey-deep);
+  }
+  .step h4{font-size:1.05rem;margin-bottom:6px}
+  .step p{font-size:.85rem;color:#6b5436;font-weight:600}
+
+  /* CTA */
+  .cta{
+    background:linear-gradient(160deg,#FFC83D,#F6A623);
+    border-radius:34px;padding:50px 26px;text-align:center;color:#fff;
+    box-shadow:var(--shadow);max-width:880px;margin:40px auto;
+  }
+  .cta h2{font-size:clamp(1.6rem,4vw,2.4rem);text-shadow:0 3px 0 var(--honey-deep)}
+  .cta p{font-weight:700;margin:14px 0 26px;font-size:1.1rem}
+  .btn{
+    display:inline-block;background:#fff;color:var(--honey-deep);text-decoration:none;
+    font-weight:900;font-size:1.15rem;padding:16px 38px;border-radius:50px;
+    box-shadow:0 8px 0 #d98e12;transition:transform .12s,box-shadow .12s;
+    animation:pulse 2s ease-in-out infinite;
+  }
+  .btn:hover{transform:translateY(2px);box-shadow:0 4px 0 #d98e12}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+  .contact{margin-top:22px;font-weight:700}
+  .contact span{background:rgba(255,255,255,.25);padding:6px 14px;border-radius:30px;margin:0 4px;display:inline-block}
+
+  /* reveal on scroll */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+  .reveal.show{opacity:1;transform:none}
+
+  footer{text-align:center;padding:30px;color:#9a8456;font-weight:600;font-size:.9rem}
+
+  @media(max-width:720px){.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero-hive"></div>
+  <!-- Flying bee -->
+  <svg class="flybee" viewBox="0 0 100 80" aria-hidden="true">
+    <g class="wing"><ellipse cx="38" cy="20" rx="16" ry="10" fill="#fff" stroke="#333" stroke-width="2"/></g>
+    <g class="wing"><ellipse cx="62" cy="20" rx="16" ry="10" fill="#fff" stroke="#333" stroke-width="2"/></g>
+    <ellipse cx="50" cy="45" rx="30" ry="22" fill="#FFC83D" stroke="#2B2118" stroke-width="3"/>
+    <rect x="38" y="26" width="8" height="40" fill="#2B2118"/>
+    <rect x="54" y="26" width="8" height="40" fill="#2B2118"/>
+    <circle cx="50" cy="45" r="6" fill="#fff" stroke="#2B2118" stroke-width="2"/>
+    <path d="M40 50 Q50 58 60 50" stroke="#2B2118" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="42" cy="42" r="2.4" fill="#2B2118"/>
+    <circle cx="58" cy="42" r="2.4" fill="#2B2118"/>
+  </svg>
+
+  <h1>🐝 BeeSmart Academic Studio</h1>
+  <div class="tag">University work, done right — so you can live your life.</div>
+  <p class="sub">Like bees to honey, students are drawn to work that actually lands.
+  We handle the research, the referencing, the build and the deadlines — you keep your time, your grades, and your sanity.</p>
+</header>
+
+<!-- PROBLEM / SOLUTION -->
+<section class="reveal">
+  <h2 class="sec-title">The University Grind Is Real. So Is the Fix.</h2>
+  <p class="sec-sub">Back-to-back modules, tight rubrics, and "I have no idea where to start" — we turn the pressure into a plan you can actually relax about.</p>
+  <div class="split">
+    <div class="card bad">
+      <h3>😵 Before</h3>
+      <ul>
+        <li>Back-to-back deadlines with zero bandwidth</li>
+        <li>AI-drafted submissions that trip detectors and risk academic conduct</li>
+        <li>Sourcing chaos — no solid references, no real direction</li>
+        <li>Burnout eating your sleep, social life and focus</li>
+      </ul>
+    </div>
+    <div class="card good">
+      <h3>😎 After</h3>
+      <ul>
+        <li>Clear academic goals, mapped out and delivered</li>
+        <li>Original, human-quality writing in your voice</li>
+        <li>Properly cited research from journals, papers & real sources</li>
+        <li>You present it, understand it, and own it</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="reveal">
+  <h2 class="sec-title">What We Actually Do 🛠️</h2>
+  <p class="sec-sub">A sharp, focused skill-set built around one outcome: getting you from blank page to submitted, at academic standard.</p>
+  <div class="services">
+    <div class="svc">
+      <!-- magnifier = research -->
+      <svg viewBox="0 0 100 100"><circle cx="42" cy="42" r="26" fill="#FFE39B" stroke="#2B2118" stroke-width="4"/><line x1="62" y1="62" x2="86" y2="86" stroke="#2B2118" stroke-width="8" stroke-linecap="round"/><path d="M32 42 h20 M42 32 v20" stroke="#F6A623" stroke-width="4" stroke-linecap="round"/></svg>
+      <h3>Academic Research</h3>
+      <p>Peer-reviewed, current and properly cited — not a Wikipedia skim.</p>
+    </div>
+    <div class="svc">
+      <!-- play button = youtube scraper -->
+      <svg viewBox="0 0 100 100"><rect x="12" y="26" width="76" height="48" rx="14" fill="#FF9EB5" stroke="#2B2118" stroke-width="4"/><polygon points="42,40 42,60 62,50" fill="#fff" stroke="#2B2118" stroke-width="3"/></svg>
+      <h3>Reference & Sample Mining</h3>
+      <p>We mine lectures, walkthroughs & sample projects for solid references and working examples.</p>
+    </div>
+    <div class="svc">
+      <!-- pencil = assignments -->
+      <svg viewBox="0 0 100 100"><path d="M20 80 L30 70 L70 30 L80 40 L40 80 Z" fill="#73C2FB" stroke="#2B2118" stroke-width="4" stroke-linejoin="round"/><path d="M70 30 L80 20 L88 28 L78 38 Z" fill="#FFC83D" stroke="#2B2118" stroke-width="3" stroke-linejoin="round"/></svg>
+      <h3>Coursework & Assignments</h3>
+      <p>Essays, reports, problem sets and labs — done to spec, on time.</p>
+    </div>
+    <div class="svc">
+      <!-- rocket = development -->
+      <svg viewBox="0 0 100 100"><path d="M50 12 C66 28 66 52 50 64 C34 52 34 28 50 12 Z" fill="#7BC47F" stroke="#2B2118" stroke-width="4"/><circle cx="50" cy="34" r="7" fill="#fff" stroke="#2B2118" stroke-width="3"/><path d="M50 64 L42 80 M50 64 L58 80" stroke="#F6A623" stroke-width="5" stroke-linecap="round"/></svg>
+      <h3>Technical Development</h3>
+      <p>Code, apps, prototypes & data work — built with creativity and rigour.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="reveal">
+  <h2 class="sec-title">How We Work 🧭</h2>
+  <p class="sec-sub">No jargon, no mystery. A straightforward process that keeps you in control:</p>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h4>You Brief Us</h4><p>Share the task, rubric and deadline. We read it properly.</p></div>
+    <div class="step"><div class="num">2</div><h4>We Scope It</h4><p>Clear plan, milestones, no guesswork.</p></div>
+    <div class="step"><div class="num">3</div><h4>We Build It</h4><p>Original work, academic standard, your voice.</p></div>
+    <div class="step"><div class="num">4</div><h4>Integrity-Checked</h4><p>Clean of lazy AI patterns; detector-aware.</p></div>
+    <div class="step"><div class="num">5</div><h4>We Walk You Through It</h4><p>A summary so you understand and can defend it.</p></div>
+    <div class="step"><div class="num">6</div><h4>Your Time Back</h4><p>Submit with confidence. Go live your life.</p></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="reveal">
+  <h2 class="sec-title">Why Students Stick With Us 🍯</h2>
+  <div class="services">
+    <div class="svc"><svg viewBox="0 0 100 100"><path d="M50 14 l10 22 24 2 -18 16 6 24 -22 -13 -22 13 6 -24 -18 -16 24 -2z" fill="#FFC83D" stroke="#2B2118" stroke-width="4" stroke-linejoin="round"/></svg><h3>Bespoke & Confidential</h3><p>Tailored help, discreet by default.</p></div>
+    <div class="svc"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="#73C2FB" stroke="#2B2118" stroke-width="4"/><path d="M38 50 l9 9 16 -18" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Fast Turnaround</h3><p>Quick without cutting corners.</p></div>
+    <div class="svc"><svg viewBox="0 0 100 100"><rect x="22" y="44" width="56" height="40" rx="8" fill="#7BC47F" stroke="#2B2118" stroke-width="4"/><path d="M34 44 v-8 a16 16 0 0 1 32 0 v8" fill="none" stroke="#2B2118" stroke-width="4"/><circle cx="50" cy="62" r="6" fill="#fff" stroke="#2B2118" stroke-width="3"/></svg><h3>Academic Polish</h3><p>Formatted, referenced, submission-ready.</p></div>
+    <div class="svc"><svg viewBox="0 0 100 100"><path d="M50 16 C30 16 18 34 18 50 c0 14 10 24 22 28 v8 h20 v-8 c12 -4 22 -14 22 -28 C82 34 70 16 50 16z" fill="#FF9EB5" stroke="#2B2118" stroke-width="4"/></svg><h3>Detector-Aware</h3><p>Human-quality writing, not obvious AI slop.</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="reveal">
+  <div class="cta">
+    <h2>🐝 Ready to Buzz Past the Deadlines?</h2>
+    <p>Send us your task. Set the goal. Go live your life — we'll bring the honey.</p>
+    <a class="btn" href="https://wa.me/27XXXXXXXXX?text=Hi%20BeeSmart%2C%20I%20need%20help%20with%20an%20assignment">Message Us on WhatsApp</a>
+    <div class="contact">
+      <span>📱 WhatsApp: [Your Number]</span>
+      <span>✉️ Email: [you@beesmart.co]</span>
+    </div>
+  </div>
+</section>
+
+<footer>Made simple on purpose. BeeSmart Academic Studio — your work, explained, delivered, done. 🐝</footer>
+
+<script>
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); obs.unobserve(e.target);} });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
