@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Kavanagh's Hair & Beauty",
+    "category": "hairdresser",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 434 0206",
+    "email": null,
+    "lat": -33.9225254,
+    "lon": 18.3803731,
+    "addr": "Regent Road",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Aris Souvlaki",
+    "category": "restaurant",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 439 6683",
+    "email": null,
+    "lat": -33.9218718,
+    "lon": 18.3820855,
+    "addr": "Regent Road",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Louisa & Friends Hair Designers",
+    "category": "hairdresser",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 439 6337",
+    "email": null,
+    "lat": -33.9207931,
+    "lon": 18.3838899,
+    "addr": "Regent Road",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Shin Thai",
+    "category": "restaurant",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 439 7190",
+    "email": null,
+    "lat": -33.9219525,
+    "lon": 18.3819552,
+    "addr": "Regent Road",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "The Beauty Spot",
+    "category": "beauty",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 434 6330",
+    "email": null,
+    "lat": -33.9204278,
+    "lon": 18.3840699,
+    "addr": "Regent Road",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Bella Italia",
+    "category": "restaurant",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 434 9056",
+    "email": null,
+    "lat": -33.9137851,
+    "lon": 18.391246,
+    "addr": "",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Make",
+    "category": "restaurant",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 434 8899",
+    "email": null,
+    "lat": -33.9179185,
+    "lon": 18.3877696,
+    "addr": "",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Kateznailbar",
+    "category": "beauty",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 62 964 7816",
+    "email": null,
+    "lat": -33.9120407,
+    "lon": 18.3932271,
+    "addr": "Main Road 301",
+    "suburb": "Sea Point"
+  },
+  {
+    "name": "Ruth Burlak",
+    "category": "beauty",
+    "area": "CPT_Tamboerskloof",
+    "phone": "+27 21 424 4505",
+    "email": null,
+    "lat": -33.9321801,
+    "lon": 18.4092355,
+    "addr": "",
+    "suburb": "CPT_Tamboerskloof"
+  },
+  {
+    "name": "Kind Regards",
+    "category": "restaurant",
+    "area": "CPT_Observatory",
+    "phone": "+27732452317",
+    "email": null,
+    "lat": -33.9381561,
+    "lon": 18.468687,
+    "addr": "",
+    "suburb": "CPT_Observatory"
+  },
+  {
+    "name": "Redemption Burgers",
+    "category": "restaurant",
+    "area": "CPT_Woodstock",
+    "phone": "+27 79 476 3648",
+    "email": null,
+    "lat": -33.9273543,
+    "lon": 18.4576298,
+    "addr": "",
+    "suburb": "CPT_Woodstock"
+  },
+  {
+    "name": "Flourish Bistro",
+    "category": "restaurant",
+    "area": "CPT_Woodstock",
+    "phone": "+27 61 491 9479",
+    "email": null,
+    "lat": -33.9274805,
+    "lon": 18.4568387,
+    "addr": "Albert Road 403",
+    "suburb": "Woodstock"
+  }
+]
