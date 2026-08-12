@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Website Security Check — SiteCraft SA</title>
+<style>
+  :root{--bg:#0d1419;--panel:#141e26;--line:#22303c;--txt:#e8eef2;--mut:#8fa3b3;--acc:#3ddc97;--acc2:#2bb673;--warn:#ffb648;--bad:#ff7a7a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.55;padding:28px 18px}
+  .wrap{max-width:760px;margin:0 auto}
+  .head{text-align:center;margin-bottom:26px}
+  .logo{font-size:20px;font-weight:800;letter-spacing:-.02em}
+  .logo span{color:var(--acc)}
+  .head h1{font-size:27px;margin:14px 0 6px;letter-spacing:-.02em}
+  .head p{color:var(--mut);font-size:14.5px;max-width:56ch;margin:0 auto}
+  .pill{display:inline-block;background:rgba(61,220,151,.12);border:1px solid rgba(61,220,151,.4);color:var(--acc);
+    padding:5px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:16px}
+  .card h2{font-size:17px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+  .card h2 .n{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(61,220,151,.15);border:1px solid rgba(61,220,151,.45);
+    color:var(--acc);display:grid;place-items:center;font-size:14px;font-weight:800}
+  .card p{color:var(--mut);font-size:14.5px;margin-bottom:8px}
+  .card p b{color:var(--txt)}
+  .test{background:linear-gradient(135deg,#14222c,#101b24);border:1px solid var(--warn);border-radius:14px;padding:18px 20px;margin-top:12px}
+  .test b{color:var(--warn);font-size:13.5px;letter-spacing:.05em;text-transform:uppercase}
+  .test ol{margin:10px 0 4px 20px;color:var(--txt);font-size:14.5px}
+  .test ol li{margin-bottom:6px}
+  .test .verdict{font-size:14px;color:var(--mut);margin-top:8px}
+  .badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-left:auto;flex:none}
+  .badge.pass{background:rgba(61,220,151,.14);color:var(--acc);border:1px solid rgba(61,220,151,.4)}
+  .badge.fail{background:rgba(255,122,122,.12);color:var(--bad);border:1px solid rgba(255,122,122,.4)}
+  .popia{background:linear-gradient(135deg,#1a2430,#132029);border:1px solid var(--acc2);border-radius:14px;padding:18px 20px;margin-bottom:16px}
+  .popia b{color:var(--acc);font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+  .popia p{color:var(--mut);font-size:14px;margin-top:8px}
+  .popia p b{color:var(--txt);text-transform:none;letter-spacing:0}
+  .score{display:flex;gap:22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin-bottom:16px}
+  .ring{width:92px;height:92px;border-radius:50%;flex:none;display:grid;place-items:center;background:conic-gradient(var(--acc) calc(var(--v)*25%),#22303c 0)}
+  .ring i{width:70px;height:70px;border-radius:50%;background:var(--panel);display:grid;place-items:center;font-style:normal;font-size:26px;font-weight:800;color:var(--acc)}
+  .score h3{font-size:18px;margin-bottom:4px}
+  .score p{color:var(--mut);font-size:14px}
+  .cta{background:linear-gradient(135deg,#0f3d2c,#0b2c20);border:1px solid var(--acc);border-radius:16px;padding:24px;text-align:center;margin-top:16px}
+  .cta h3{font-size:19px;margin-bottom:8px;color:var(--acc)}
+  .cta p{color:var(--mut);font-size:14px;margin-bottom:14px}
+  .cta .btn{display:inline-block;background:var(--acc);color:#07110c;font-weight:800;text-decoration:none;padding:13px 26px;border-radius:12px;font-size:15px}
+  .foot{text-align:center;color:var(--mut);font-size:12.5px;margin-top:22px}
+  .src{text-align:center;color:#5b6f7e;font-size:11.5px;margin-top:8px}
+  @media print{body{background:#fff;color:#111}.card,.score,.popia,.test,.cta{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <div class="logo">Site<span>Craft</span> SA</div>
+    <p class="pill">Free audit · 5 minutes · no signup</p>
+    <h1>Is your website leaking customer data?</h1>
+    <p>Most small business websites in South Africa fail at least one of these 4 security checks.
+    The scary part: most owners only find out after a customer complains — or after a fine.</p>
+  </div>
+
+  <div class="popia">
+    <b>POPIA — why this matters to you</b>
+    <p>Since July 2021, South Africa's <b>Protection of Personal Information Act</b> requires every business that
+    holds customer details (names, numbers, bookings, orders) to keep them <b>safe</b>. If a customer's info leaks
+    from your website, the Information Regulator can fine you up to <b>R10 million</b> — and you're the one liable,
+    not your web developer.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">1</span>Can you tell who's who? <span class="badge pass">CHECK 1</span></h2>
+    <p><b>Authentication.</b> If your site takes bookings, orders or payments, it must <b>verify</b> that a person is
+    who they say they are before letting them in — a password, an OTP, a Google/Apple login. A site where "anyone
+    can be anyone" cannot protect anyone.</p>
+    <p>❓ <b>Ask:</b> Can a visitor access customer-only areas without logging in?</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>Can a robot flood you? <span class="badge pass">CHECK 2</span></h2>
+    <p><b>Rate limiting.</b> A bot can fire your contact form or booking page <b>500 times a minute</b> — fake
+    bookings, spam messages, even crashing your site. Secure sites limit how many requests one visitor can make
+    in a short time.</p>
+    <p>❓ <b>Ask:</b> Could someone (or something) spam your form 100 times in one minute?</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">3</span>Can one customer see another's data? <span class="badge pass">CHECK 3</span></h2>
+    <p><b>Row-level security.</b> This is the big one — and it has a <b>5-second test</b> you can run yourself:</p>
+    <div class="test">
+      <b>The 5-second privacy test</b>
+      <ol>
+        <li>Log into your site as one customer (e.g. <b>John</b>). Copy the web address (URL) of John's page.</li>
+        <li>Log out. Log in as a different customer (e.g. <b>Nancy</b>).</li>
+        <li>Paste John's URL into the address bar.</li>
+      </ol>
+      <p class="verdict">🚨 If you can still see John's details while logged in as Nancy — <b>your site is leaking
+      customer data</b>. Every customer on your site can see every other customer's info.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">4</span>Does the site trust strangers? <span class="badge pass">CHECK 4</span></h2>
+    <p><b>Server-side validation.</b> Everything a visitor types into your site (name, phone, email) must be
+    <b>double-checked by the server</b> before it's saved. A form that trusts whatever comes in is the most common
+    way hackers get into a database.</p>
+    <p>❓ <b>Ask:</b> Does your site check the data it receives, or save it blindly?</p>
+  </div>
+
+  <div class="score" style="--v:0">
+    <div class="ring"><i>0/4</i></div>
+    <div>
+      <h3>Your score</h3>
+      <p>Count how many checks your site passes.
+      <b>4/4</b> = secure · <b>2–3/4</b> = at risk · <b>0–1/4</b> = exposed.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>Want the full check — free?</h3>
+    <p>I'll run all 4 checks on your live website and send you a plain-language report within 24 hours.
+    No cost, no obligation, no "gotcha" upsell.</p>
+    <a class="btn" href="https://wa.me/27745086001?text=Hi%2C%20I%20want%20the%20free%20security%20check%20on%20my%20website">WhatsApp me: FREE CHECK →</a>
+    <p style="margin-top:10px">Or reply to this message with <b>CHECK</b>.</p>
+  </div>
+
+  <div class="foot">SiteCraft SA — websites for South African local businesses · R1 500 setup · R450/month care</div>
+  <div class="src">Checks based on OWASP Top 10 fundamentals: authentication, rate limiting, authorization (RLS), input validation.</div>
+</div>
+</body>
+</html>
