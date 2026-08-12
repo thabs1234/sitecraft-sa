@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Website Security Check — SiteCraft SA</title>
+<meta name="description" content="Free 2-minute security check: find out if your website is leaking customer data, could be spammed, or would fail a POPIA inspection. No signup.">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+.tool{max-width:820px;margin:0 auto}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:22px 24px;margin-bottom:14px}
+.q h3{font-size:16.5px;margin-bottom:6px;display:flex;gap:10px;align-items:baseline}
+.q h3 .n{color:var(--acc);font-weight:800;flex:none}
+.q p{color:var(--mut);font-size:14px;margin-bottom:14px}
+.opts{display:flex;gap:10px;flex-wrap:wrap}
+.opt{cursor:pointer;border:1px solid var(--line);background:#1a2530;color:var(--txt);border-radius:99px;padding:9px 18px;font-size:14px;transition:.15s}
+.opt:hover{border-color:var(--acc)}
+.opt.on{background:rgba(61,220,151,.14);border-color:var(--acc);color:var(--acc);font-weight:700}
+#out{display:none;margin-top:26px}
+.score-wrap{display:flex;gap:26px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);padding:28px;flex-wrap:wrap}
+.ring{--v:0;width:132px;height:132px;border-radius:50%;flex:none;display:grid;place-items:center;
+ background:conic-gradient(var(--rc) calc(var(--v)*1%),#1c2530 0)}
+.ring i{width:104px;height:104px;border-radius:50%;background:var(--panel);display:grid;place-items:center;
+ font-style:normal;font-size:32px;font-weight:800;color:var(--rc)}
+.verdict h3{font-size:23px;margin-bottom:6px}
+.verdict p{color:var(--mut);font-size:15px;max-width:46ch}
+.checks{display:grid;gap:10px;margin-top:22px}
+.chk{display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.chk .ic{font-size:19px;line-height:1.2;flex:none}
+.chk b{display:block;font-size:15px;margin-bottom:3px}
+.chk span{color:var(--mut);font-size:14px}
+.popia{margin-top:22px;background:linear-gradient(135deg,#1a2430,#132029);border:1px solid var(--acc2);border-radius:var(--rad);padding:24px}
+.popia b{color:var(--acc);font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+.popia p{color:var(--mut);font-size:14px;margin-top:8px}
+.popia p b{color:var(--txt);text-transform:none;letter-spacing:0}
+.cta{margin-top:22px;background:linear-gradient(135deg,#0f3d2c,#0b2c20);border:1px solid var(--acc);border-radius:var(--rad);padding:26px;text-align:center}
+.cta h3{font-size:19px;margin-bottom:8px;color:var(--acc)}
+.cta p{color:var(--mut);font-size:14px;margin-bottom:14px}
+.cta a.btn{margin:0 auto}
+.src{color:var(--mut);font-size:12.5px;margin-top:18px;text-align:center}
+</style>
+</head>
+<body>
+
+<header class="nav"><a class="logo" href="../../index.html">Site<span>Craft</span> SA</a>
+<nav><a href="../../index.html#work">Samples</a><a href="../../index.html#pricing">Pricing</a>
+<a class="btn btn-sm" href="../../index.html#contact">Free sample</a></nav></header>
+
+<section class="hero" style="padding-bottom:20px"><div class="hero-inner tool">
+<p class="eyebrow">Free tool · no signup · 2 minutes</p>
+<h1>Is your website <em>leaking</em> customer data?</h1>
+<p class="sub">Answer 6 yes/no questions about your own website. We score it against the checks a POPIA inspector would run — and show you what to fix.</p>
+</div></section>
+
+<section style="padding-top:10px"><div class="tool">
+
+<div id="quiz">
+<div class="q" data-pts="20" data-idx="0">
+  <h3><span class="n">1</span>Does your site have logins (customers, staff, or bookings)?</h3>
+  <p>If yes, does it <b>verify</b> who's logging in — password, OTP, Google/Apple login?</p>
+  <div class="opts"><button class="opt" data-v="20">Yes — with verification</button><button class="opt" data-v="0">Yes — but anyone can get in</button><button class="opt" data-v="10">No logins at all</button></div>
+</div>
+<div class="q" data-pts="15" data-idx="1">
+  <h3><span class="n">2</span>Could a bot spam your contact/booking form?</h3>
+  <p>A bot can fire your form 500 times a minute — fake bookings, spam, even a crash. Good sites limit how often one visitor can submit.</p>
+  <div class="opts"><button class="opt" data-v="15">Pretty sure it's protected</button><button class="opt" data-v="0">Not sure / probably not</button></div>
+</div>
+<div class="q" data-pts="30" data-idx="2">
+  <h3><span class="n">3</span>The 5-second privacy test</h3>
+  <p>Log in as one customer, copy the web address. Log out, log in as another customer, paste the first address. Can you still see the first customer's details?</p>
+  <div class="opts"><button class="opt" data-v="30">No — I can't see other customers' data</button><button class="opt" data-v="0">I can / I don't know</button></div>
+</div>
+<div class="q" data-pts="15" data-idx="3">
+  <h3><span class="n">4</span>Does your site double-check what visitors type?</h3>
+  <p>Names, numbers, emails — everything must be validated by the server before it's saved. A form that trusts anything it receives is how hackers get in.</p>
+  <div class="opts"><button class="opt" data-v="15">Yes, it checks</button><button class="opt" data-v="0">Not sure / probably not</button></div>
+</div>
+<div class="q" data-pts="10" data-idx="4">
+  <h3><span class="n">5</span>Does your site have legal pages?</h3>
+  <p>A Terms of Service and Privacy Policy in the footer — POPIA expects you to state how you use customer data.</p>
+  <div class="opts"><button class="opt" data-v="10">Yes, both</button><button class="opt" data-v="5">One of them</button><button class="opt" data-v="0">No</button></div>
+</div>
+<div class="q" data-pts="10" data-idx="5">
+  <h3><span class="n">6</span>Does your site work properly on a phone?</h3>
+  <p>Most SA customers browse on mobile. If your site is broken or cut off on a phone, they leave — and the ones who stay trust it less.</p>
+  <div class="opts"><button class="opt" data-v="10">Looks good on my phone</button><button class="opt" data-v="0">It's messy / I don't know</button></div>
+</div>
+<button class="btn" onclick="scoreIt()" style="display:block;margin:8px auto 0">Score my website</button>
+</div>
+
+<div id="out">
+ <div class="score-wrap">
+  <div class="ring" id="ring"><i id="scoreNum">0</i></div>
+  <div class="verdict"><span class="pill" id="grade">—</span>
+   <h3 id="vtitle" style="margin-top:12px"></h3><p id="vtext"></p></div>
+ </div>
+ <div class="checks" id="checks"></div>
+ <div class="popia"><b>POPIA — why this matters</b>
+  <p>Since July 2021, South Africa's <b>Protection of Personal Information Act</b> holds the business —
+  <b>you</b> — liable when customer data leaks, with fines up to <b>R10 million</b>. Not your web developer.
+  A leak doesn't have to be a hacker: one customer seeing another's details is already a breach.</p>
+ </div>
+ <div class="cta">
+  <h3>Want the real check — free?</h3>
+  <p>I'll run all the checks on your live site and send a plain-language report within 24 hours. No cost, no obligation.</p>
+  <a class="btn" href="https://wa.me/27745086001?text=Hi%2C%20I%20want%20the%20free%20security%20check%20on%20my%20website">WhatsApp me: FREE CHECK →</a>
+ </div>
+</div>
+
+<p class="src">Nothing is stored. You answer on your own device — no data is sent to us. The checks reflect OWASP Top 10 fundamentals (auth, rate limiting, authorization, validation) and POPIA Chapter 3 requirements.</p>
+</div></section>
+
+<footer><p>SiteCraft SA · <a href="mailto:lehauthabang@gmail.com">lehauthabang@gmail.com</a> · <a href="../../index.html">Home</a></p></footer>
+
+<script>
+var opts=[];
+document.querySelectorAll('.opt').forEach(function(b){
+  b.addEventListener('click',function(){
+    var q=b.closest('.q');
+    q.querySelectorAll('.opt').forEach(function(x){x.classList.remove('on');});
+    b.classList.add('on');
+    q.dataset.pts=b.dataset.v;
+  });
+});
+function scoreIt(){
+  var score=0;
+  document.querySelectorAll('.q').forEach(function(q){score+=parseInt(q.dataset.pts||'0',10);});
+  var ring=document.getElementById('ring'), num=document.getElementById('scoreNum');
+  var grade,title,text,rc,checks=[];
+  if(score>=90){grade='SECURE';title='Looking good — mostly';text='Your site passes the basic checks. The last few points are usually legal pages or mobile polish.';rc='var(--acc)';checks=[['✅','Strong on the fundamentals','Keep the logins, validation and privacy checks in place.']];}
+  else if(score>=60){grade='AT RISK';title='You have real gaps';text='A couple of failures here can expose customer data — and that's what POPIA fines are based on.';rc='var(--warn)';checks=[['⚠️','At least one critical check failed','Run the 5-second privacy test on your own site this week, and get the login/validation checks fixed.']];}
+  else{grade='EXPOSED';title='Your site is vulnerable';text='Multiple checks failing means customer data is at risk — and you carry the POPIA liability.';rc='var(--bad)';checks=[['🚨','Critical gaps found','Get a full check done before a customer finds the hole first.']];}
+  ring.style.setProperty('--v',score);ring.style.background='conic-gradient('+rc+' calc(var(--v)*1%),#1c2530 0)';
+  ring.querySelector('i').style.color=rc;num.textContent=score+'/100';
+  document.getElementById('grade').textContent=grade;
+  document.getElementById('vtitle').textContent=title;
+  document.getElementById('vtext').textContent=text;
+  var c=document.getElementById('checks');c.innerHTML='';
+  checks.forEach(function(ch){var d=document.createElement('div');d.className='chk';
+    d.innerHTML='<span class="ic">'+ch[0]+'</span><div><b>'+ch[1]+'</b><span>'+ch[2]+'</span></div>';c.appendChild(d);});
+  document.getElementById('quiz').style.display='none';
+  document.getElementById('out').style.display='block';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
