@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>SiteCraft SA — Invoice</title>
+<style>
+:root{--g:#0a7d4d;--d:#06402b}
+*{box-sizing:border-box}body{font-family:Segoe UI,Roboto,Arial,sans-serif;color:#142;margin:0;padding:32px}
+.wrap{max-width:780px;margin:0 auto;border:1px solid #cdeede;border-radius:14px;overflow:hidden}
+header{background:linear-gradient(135deg,var(--g),var(--d));color:#fff;padding:24px 28px;display:flex;justify-content:space-between;align-items:center}
+header h1{margin:0;font-size:1.4rem}header .brand{font-size:.85rem;opacity:.9}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.meta > div{padding:16px 28px}
+.meta .left{background:#f4fbf7}
+.meta .right{background:#eef7f1}
+h3{margin:0 0 6px;color:var(--d);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px}
+p{margin:2px 0;font-size:.95rem}
+table{width:100%;border-collapse:collapse}
+th,td{padding:12px 28px;text-align:left;border-bottom:1px solid #e3f0e8}
+th{background:#f4fbf7;color:var(--d);font-size:.8rem;text-transform:uppercase}
+td.amt,th.amt{text-align:right;font-variant-numeric:tabular-nums}
+.total{background:#06402b;color:#fff}
+.total td{padding:16px 28px;font-size:1.1rem;font-weight:700}
+.bank{padding:16px 28px;background:#f4fbf7;font-size:.92rem}
+.foot{padding:16px 28px;font-size:.82rem;color:#567;background:#fff}
+.note{color:#b00;font-weight:600}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+  <div><h1>INVOICE</h1><div class="brand">SiteCraft SA</div></div>
+  <div style="text-align:right"><div class="brand">Invoice No.</div><div style="font-size:1.2rem;font-weight:700">SC-[[INVNO]]</div></div>
+</header>
+
+<div class="meta">
+  <div class="left">
+    <h3>Bill To</h3>
+    <p><strong>[[CLIENT_NAME]]</strong></p>
+    <p>[[BUSINESS_NAME]]</p>
+    <p>[[BUSINESS_ADDRESS]]</p>
+    <p>[[CLIENT_PHONE]]</p>
+  </div>
+  <div class="right">
+    <h3>From</h3>
+    <p><strong>SiteCraft SA</strong></p>
+    <p>Thabang — Done-for-you websites</p>
+    <p>WhatsApp: [[YOUR_WHATSAPP]]</p>
+    <p>Issue date: [[ISSUE_DATE]]</p>
+    <p>Due date: [[DUE_DATE]]</p>
+  </div>
+</div>
+
+<table>
+  <tr><th>Item</th><th class="amt">Qty</th><th class="amt">Amount</th></tr>
+  <tr><td>Website setup & build (your live site, domain, branding, WhatsApp-ready)</td><td class="amt">1</td><td class="amt">R1,500.00</td></tr>
+  <tr><td>Monthly care plan — first month (hosting, updates, support)</td><td class="amt">1</td><td class="amt">R450.00</td></tr>
+  <tr class="total"><td colspan="2">Total due on activation</td><td class="amt">R1,950.00</td></tr>
+</table>
+
+<div class="bank">
+  <h3 style="color:var(--d)">Payment — Bank Transfer (EFT)</h3>
+  <p>Bank: [[BANK_NAME]]</p>
+  <p>Account name: [[ACCOUNT_NAME]]</p>
+  <p>Account no: [[ACCOUNT_NO]]</p>
+  <p>Branch code: [[BRANCH_CODE]]</p>
+  <p>Reference: SC-[[INVNO]]</p>
+  <p style="margin-top:10px"><span class="note">Or pay instantly via WhatsApp — ask Thabang for a Tap-on-Phone / SnapScan link.</span></p>
+</div>
+
+<div class="foot">
+  <p><strong>What you get:</strong> a live, mobile-friendly website with your branding, your services, a one-tap WhatsApp button, and Google-friendly setup. After activation we hand over login details + a Google Business Profile draft within 5 working days.</p>
+  <p><strong>Monthly plan:</strong> R450/mo continues automatically (hosting, edits, support). Cancel anytime — no lock-in.</p>
+  <p>Thank you for choosing SiteCraft SA. Reply "PAID" with proof and we'll start building. 🚀</p>
+</div>
+</div>
+</body></html>
