@@ -1,1 +1,6 @@
 outreach/
+
+# Playwright CLI scratch output
+.playwright-cli/
+__pycache__/
+*.pyc
