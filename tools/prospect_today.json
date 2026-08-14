@@ -1,0 +1,236 @@
+[
+  {
+    "area": "Soweto",
+    "name": "Pick n Pay",
+    "type": "Supermarket",
+    "phone": "+27119802802",
+    "addr": "Ndaba Drive, Protea North, Soweto",
+    "lat": -26.2726551,
+    "lon": 27.8318241
+  },
+  {
+    "area": "Soweto",
+    "name": "Usave",
+    "type": "Supermarket",
+    "phone": "+27112448325",
+    "addr": "Yshangisa Street, Soweto",
+    "lat": -26.2484749,
+    "lon": 27.8159166
+  },
+  {
+    "area": "Soweto",
+    "name": "Pick n Pay Express",
+    "type": "Convenience",
+    "phone": "+27119310625",
+    "addr": "Gauteng",
+    "lat": -26.2308963,
+    "lon": 27.8388313
+  },
+  {
+    "area": "Soweto",
+    "name": "Itereleng Clinic",
+    "type": "Clinic",
+    "phone": "+27119890304",
+    "addr": "Elias Motsoaledi Road, Dobsonville",
+    "lat": -26.2175861,
+    "lon": 27.8707597
+  },
+  {
+    "area": "Soweto",
+    "name": "Boxer",
+    "type": "Supermarket",
+    "phone": "+27639036986",
+    "addr": "Mabalane Street, Senoane, Soweto",
+    "lat": -26.2731604,
+    "lon": 27.8647659
+  },
+  {
+    "area": "Mamelodi",
+    "name": "PEP",
+    "type": "Clothes",
+    "phone": "+27128037474",
+    "addr": "Pretoria",
+    "lat": -25.73463,
+    "lon": 28.31189
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Pick n Pay Express",
+    "type": "Convenience",
+    "phone": "+27825639266",
+    "addr": "Pretoria",
+    "lat": -25.7551911,
+    "lon": 28.3245099
+  },
+  {
+    "area": "Mamelodi",
+    "name": "PEP",
+    "type": "Clothes",
+    "phone": "+27128050660",
+    "addr": "Pretoria",
+    "lat": -25.7147046,
+    "lon": 28.3342656
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Pick n Pay",
+    "type": "Supermarket",
+    "phone": "+27129441316",
+    "addr": "Tsamaya Avenue, Mamelodi",
+    "lat": -25.7189128,
+    "lon": 28.3374977
+  },
+  {
+    "area": "Mamelodi",
+    "name": "East Balt",
+    "type": "Bakery",
+    "phone": "+27128039170",
+    "addr": "Mundt Street",
+    "lat": -25.7242309,
+    "lon": 28.3256504
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Kalapeng Mamelodi Crossing Pharmacy",
+    "type": "Clinic",
+    "phone": "+27128059231",
+    "addr": "Maphalla Drive, Mamelodi Pretoria",
+    "lat": -25.7140923,
+    "lon": 28.3344023
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Mamelodi West Primary Health Care Clinic",
+    "type": "Clinic",
+    "phone": "+27123586420",
+    "addr": "Nthsabeleng Street, Mamelodi West, Pretoria",
+    "lat": -25.7143256,
+    "lon": 28.3487881
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Shoprite Mini",
+    "type": "Convenience",
+    "phone": "+27128019738",
+    "addr": "Pretoria",
+    "lat": -25.7217068,
+    "lon": 28.3854171
+  },
+  {
+    "area": "Mamelodi",
+    "name": "Mapula The Hairdresser",
+    "type": "Hairdresser",
+    "phone": "+27727882888",
+    "addr": "Gaugela Street, Pretoria",
+    "lat": -25.7413568,
+    "lon": 28.3559028
+  },
+  {
+    "area": "Tembisa",
+    "name": "Zamokuhle Hospital",
+    "type": "Clinic",
+    "phone": "+27828574541",
+    "addr": "Flint Mazibuko Drive, Tembisa",
+    "lat": -25.9839329,
+    "lon": 28.2392836
+  },
+  {
+    "area": "Tembisa",
+    "name": "Quality Care Private Clininc",
+    "type": "Clinic",
+    "phone": "+27783471181",
+    "addr": "Larissa Street, Tembisa",
+    "lat": -26.0014602,
+    "lon": 28.2316366
+  },
+  {
+    "area": "Tembisa",
+    "name": "Oakmoor Pharmancy",
+    "type": "Pharmacy",
+    "phone": "+27735941643",
+    "addr": "Nyari Street, Sethokga, Tembisa",
+    "lat": -26.0021207,
+    "lon": 28.2450557
+  },
+  {
+    "area": "Tembisa",
+    "name": "Phedisomg Medical Centre",
+    "type": "Clinic",
+    "phone": "+27119262347",
+    "addr": "March 21st Street, Tembisa",
+    "lat": -25.9988597,
+    "lon": 28.2408875
+  },
+  {
+    "area": "Tembisa",
+    "name": "Tlou wellness Chemist",
+    "type": "Pharmacy",
+    "phone": "+27713488202",
+    "addr": "Motsamai Mabula Crescent, Tembisa",
+    "lat": -25.994059,
+    "lon": 28.1996942
+  },
+  {
+    "area": "Tembisa",
+    "name": "Ntlharhimed Clinic",
+    "type": "Clinic",
+    "phone": "+27799320071",
+    "addr": "Mapungubwe Street, Tembisa",
+    "lat": -25.9981285,
+    "lon": 28.2187057
+  },
+  {
+    "area": "Tembisa",
+    "name": "DR T.J Women's Clinic Tembisa",
+    "type": "Clinic",
+    "phone": "+27731728563",
+    "addr": "Reverend R.T.J. Nemane Drive, Tembisa",
+    "lat": -26.0016386,
+    "lon": 28.2128906
+  },
+  {
+    "area": "Tembisa",
+    "name": "Tembisa AQT Station Erin Clinic",
+    "type": "Clinic",
+    "phone": "+27119262862",
+    "addr": "Kalahari Gemsbok Street, Tembisa",
+    "lat": -25.9943291,
+    "lon": 28.2234317
+  },
+  {
+    "area": "Tembisa",
+    "name": "Pick n Pay Express",
+    "type": "Convenience",
+    "phone": "+27119246141",
+    "addr": "Igqagqa, Tembisa",
+    "lat": -26.0106513,
+    "lon": 28.2214014
+  },
+  {
+    "area": "Tembisa",
+    "name": "Pick n Pay Express",
+    "type": "Convenience",
+    "phone": "+27136655991",
+    "addr": "Midrand",
+    "lat": -26.009191,
+    "lon": 28.2413321
+  },
+  {
+    "area": "Tembisa",
+    "name": "Dr. Oupa Chuene Surgery",
+    "type": "Clinic",
+    "phone": "+2711920270027119243900",
+    "addr": "Reverend RTJ Nemane Drive, Thembisa,Johannesburg",
+    "lat": -26.0055113,
+    "lon": 28.207895
+  },
+  {
+    "area": "Tembisa",
+    "name": "Pick n Pay Express",
+    "type": "Convenience",
+    "phone": "+27799629529",
+    "addr": "Reverend RTJ Nemane Drive, Tembisa",
+    "lat": -26.0041504,
+    "lon": 28.2108329
+  }
+]
