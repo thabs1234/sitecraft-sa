@@ -1,0 +1,90 @@
+[
+  {
+    "area": "Berea",
+    "name": "Chicken Tikka Palace",
+    "cat": "restaurant",
+    "phone": "+27313379460",
+    "lat": -29.8562652,
+    "lon": 31.0390228
+  },
+  {
+    "area": "Berea",
+    "name": "Garden Grill Restaurant",
+    "cat": "restaurant",
+    "phone": "+27313372231",
+    "lat": -29.8574328,
+    "lon": 31.0392392
+  },
+  {
+    "area": "Berea",
+    "name": "Al-Khair",
+    "cat": "restaurant",
+    "phone": "+273013075187",
+    "lat": -29.8557756,
+    "lon": 31.0174169
+  },
+  {
+    "area": "Berea",
+    "name": "Myeza Traditional Chemist",
+    "cat": "pharmacy",
+    "phone": "+27681201938",
+    "lat": -29.8633496,
+    "lon": 31.0183807
+  },
+  {
+    "area": "Berea",
+    "name": "Badgers",
+    "cat": "cafe",
+    "phone": "+27312012423",
+    "lat": -29.8600375,
+    "lon": 30.9987126
+  },
+  {
+    "area": "Kloof",
+    "name": "Stoker's Arms",
+    "cat": "restaurant",
+    "phone": "+27317646706",
+    "lat": -29.791388,
+    "lon": 30.8334663
+  },
+  {
+    "area": "Morningside",
+    "name": "Luna Blu",
+    "cat": "fast_food",
+    "phone": "+27313124665",
+    "lat": -29.8240504,
+    "lon": 31.0224286
+  },
+  {
+    "area": "Morningside",
+    "name": "Karak Chapatea",
+    "cat": "cafe",
+    "phone": "+27786373059",
+    "lat": -29.8303321,
+    "lon": 31.0125327
+  },
+  {
+    "area": "Pinetown",
+    "name": "Tommy's",
+    "cat": "fast_food",
+    "phone": "+27717845718",
+    "lat": -29.8357516,
+    "lon": 30.8737987
+  },
+  {
+    "area": "Umhlanga",
+    "name": "Daily Dose Umhlanga",
+    "cat": "cafe",
+    "phone": "+27727372110",
+    "lat": -29.7330435,
+    "lon": 31.0830025
+  },
+  {
+    "area": "Morningside",
+    "name": "Minty's",
+    "cat": "shop",
+    "phone": "+27312088207",
+    "lat": -29.8339547,
+    "lon": 31.0018351
+  }
+]
