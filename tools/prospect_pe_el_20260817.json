@@ -1,0 +1,170 @@
+[
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Silver Lantern",
+    "cat": "restaurant",
+    "phone": "+27413733730",
+    "lat": -33.9575333,
+    "lon": 25.5936962
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "The Coachman",
+    "cat": "restaurant",
+    "phone": "+27413733440",
+    "lat": -33.95883,
+    "lon": 25.59725
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Provincial Westbourne Pharmacy",
+    "cat": "pharmacy",
+    "phone": "+27413737631",
+    "lat": -33.9600419,
+    "lon": 25.6018841
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Life Hunterscraig",
+    "cat": "clinic",
+    "phone": "+27415079500",
+    "lat": -33.9687577,
+    "lon": 25.6097561
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Aloe Pharmacy",
+    "cat": "pharmacy",
+    "phone": "+27415814161",
+    "lat": -33.9795839,
+    "lon": 25.596557
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Klinicare MillPark",
+    "cat": "pharmacy",
+    "phone": "+27413731033",
+    "lat": -33.9591674,
+    "lon": 25.5979403
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Klinicare Eye Care",
+    "cat": "pharmacy",
+    "phone": "+27414508851",
+    "lat": -33.9541754,
+    "lon": 25.5844692
+  },
+  {
+    "area": "Greenacres",
+    "name": "Klinicare Blooms",
+    "cat": "pharmacy",
+    "phone": "+27413652070",
+    "lat": -33.9485627,
+    "lon": 25.5653148
+  },
+  {
+    "area": "Summerstrand",
+    "name": "Fishtales",
+    "cat": "restaurant",
+    "phone": "+27415823602",
+    "lat": -33.9714801,
+    "lon": 25.6326138
+  },
+  {
+    "area": "Walmer",
+    "name": "Guido's Pizzeria",
+    "cat": "fast_food",
+    "phone": "+27413683808",
+    "lat": -33.9946585,
+    "lon": 25.5372643
+  },
+  {
+    "area": "Walmer",
+    "name": "Endermologie Clinic",
+    "cat": "clinic",
+    "phone": "+27415815496",
+    "lat": -33.9819809,
+    "lon": 25.5680052
+  },
+  {
+    "area": "Walmer",
+    "name": "The Baking Shop",
+    "cat": "bakery",
+    "phone": "+27415810509",
+    "lat": -33.9817147,
+    "lon": 25.5653581
+  },
+  {
+    "area": "Walmer",
+    "name": "Family Medical Practice",
+    "cat": "clinic",
+    "phone": "+27414504849",
+    "lat": -33.9754956,
+    "lon": 25.5316594
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Finer Furnishings",
+    "cat": "shop",
+    "phone": "+27415813136",
+    "lat": -33.9733278,
+    "lon": 25.6128835
+  },
+  {
+    "area": "Gqeberha-CBD",
+    "name": "Upholstery etc",
+    "cat": "shop",
+    "phone": "+27413738224",
+    "lat": -33.9599935,
+    "lon": 25.6017816
+  },
+  {
+    "area": "Greenacres",
+    "name": "MC Bros Greengrocers",
+    "cat": "shop",
+    "phone": "+27413656451",
+    "lat": -33.94224,
+    "lon": 25.5482561
+  },
+  {
+    "area": "Greenacres",
+    "name": "Maley's Florist",
+    "cat": "shop",
+    "phone": "+27413657077",
+    "lat": -33.9476964,
+    "lon": 25.5581635
+  },
+  {
+    "area": "Greenacres",
+    "name": "Computer Gadgets",
+    "cat": "shop",
+    "phone": "+27413640737",
+    "lat": -33.9501345,
+    "lon": 25.5641787
+  },
+  {
+    "area": "Newton-Park",
+    "name": "Fibretronic Sales",
+    "cat": "shop",
+    "phone": "+27413640058",
+    "lat": -33.9433215,
+    "lon": 25.5700117
+  },
+  {
+    "area": "Walmer",
+    "name": "DigiCell",
+    "cat": "shop",
+    "phone": "+27413688505",
+    "lat": -33.9562428,
+    "lon": 25.5532602
+  },
+  {
+    "area": "Walmer",
+    "name": "Essence of Israel",
+    "cat": "shop",
+    "phone": "+27415810177",
+    "lat": -33.9808716,
+    "lon": 25.5778759
+  }
+]
